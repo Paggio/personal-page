@@ -18,12 +18,11 @@ export function ExperienceSection() {
               <Card.Header className="border-b-2 border-black bg-primary text-primary-foreground">
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
                   <div>
-                    <div className="mb-1 flex items-center gap-2">
+                    <div className="mb-1">
                       <img
                         src={`${import.meta.env.BASE_URL}${entry.logo}`}
                         alt={`${entry.company} logo`}
-                        className="h-6 w-auto object-contain"
-                        style={{ filter: "brightness(0) invert(1)" }}
+                        className="h-6 w-auto rounded object-contain bg-white px-1 py-0.5"
                       />
                     </div>
                     <Card.Title className="text-xl font-black uppercase">
