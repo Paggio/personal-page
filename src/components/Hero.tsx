@@ -41,7 +41,7 @@ export function Hero() {
         </div>
 
         {/* Download button */}
-        <a href="/CV_2026_private.pdf" download>
+        <a href={`${import.meta.env.BASE_URL}CV_2026_private.pdf`} download>
           <Button size="lg" className="gap-2 uppercase tracking-wider">
             <Download size={18} />
             Download CV

@@ -12,9 +12,10 @@ export const cvMeta = {
 export interface ExperienceEntry {
   title: string;
   company: string;
+  logo: string;
   period: string;
   location: string;
-  bullets: string[];
+  description: string[];
   tags: string[];
 }
 
@@ -22,51 +23,45 @@ export const experience: ExperienceEntry[] = [
   {
     title: "Senior Data Engineer",
     company: "Cardo AI",
+    logo: "logos/cardo_ai.png",
     period: "02/2026 – Present",
     location: "Milano, IT",
-    bullets: [
-      "Spark jobs optimisation and scheduling via Airflow",
-      "Kubernetes cluster management and configuration",
-      "Trino instance deployment for query results",
-      "Data platform implementation — ETL pipelines and infrastructure",
+    description: [
+      "I implement and optimize Spark jobs scheduled via Airflow on a Kubernetes-based Spark cluster, maintain and configure the cluster, and manage the Trino deployment used to query results. I work across the entire data platform, from hands-on ETL to underlying infrastructure.",
     ],
     tags: ["Spark", "Airflow", "Kubernetes", "Trino"],
   },
   {
     title: "Data Engineer → Senior Data Engineer",
     company: "TrueLayer",
+    logo: "logos/truelayer_logo.png",
     period: "02/2022 – 01/2026",
     location: "London, UK / Milano, IT",
-    bullets: [
-      "Data pipeline development aggregating from microservices, databases, APIs and Elasticsearch",
-      "Data organisation in S3 using Parquet and Iceberg formats",
-      "Spark on EMR for large-scale processing with Athena queries",
-      "Airflow DAGs and Kubernetes orchestration",
-      "New data platform design — Aurora snapshots to Redshift migration",
-      "Infrastructure as code with ECS, Glue, Step Functions, DBT and Terraform",
+    description: [
+      "I developed and managed data pipelines aggregating information from microservices databases, queues, third-party APIs and Elasticsearch, organizing it in S3 (Parquet/Iceberg format). Data is processed using Spark on EMR and queried via Athena, orchestrated through Airflow DAGs or Kubernetes microservices.",
+      "As a Senior Data Engineer (promoted in February 2023), I designed and implemented a new data platform from the ground up, automating Aurora cluster snapshots and their load into Redshift through ECS tasks, Glue, and Step Functions, with data models managed via DBT. All infrastructure provisioned using Terraform.",
     ],
     tags: ["Spark", "EMR", "Airflow", "Iceberg", "Redshift", "DBT", "Terraform", "Athena", "Kubernetes"],
   },
   {
     title: "Big Data Engineering Junior Specialist",
     company: "Illimity",
+    logo: "logos/illimity_logo.png",
     period: "05/2020 – 02/2022",
     location: "Milano, IT",
-    bullets: [
-      "Data stream development on Azure cloud architecture",
-      "Databricks, Data Factory, Delta Lake and MongoDB workloads",
-      "Azure DevOps workflow management",
+    description: [
+      "I contributed to the development and maintenance of Illimity's data streams within an Azure-based IT architecture. The data streams were built using Databricks, Data Factory, Delta Lake, and MongoDB, with all workflows managed through Azure DevOps.",
     ],
     tags: ["Databricks", "Azure Data Factory", "Delta Lake", "MongoDB", "Azure DevOps"],
   },
   {
     title: "Doctoral Student",
     company: "Max Planck Institute for the Structure and Dynamics of Matter",
+    logo: "logos/max_planck.png",
     period: "09/2019 – 04/2020",
     location: "Hamburg, Germany",
-    bullets: [
-      "RIXS cross-section analysis for condensed matter systems",
-      "Computational simulations for correlated electron materials",
+    description: [
+      "I participated in the theoretical and computational analysis of RIXS cross-sections, utilizing software for conducting advanced simulations of realistic condensed matter systems.",
     ],
     tags: ["Python", "Scientific Computing", "RIXS"],
   },

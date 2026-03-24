@@ -18,6 +18,14 @@ export function ExperienceSection() {
               <Card.Header className="border-b-2 border-black bg-primary text-primary-foreground">
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
                   <div>
+                    <div className="mb-1 flex items-center gap-2">
+                      <img
+                        src={`${import.meta.env.BASE_URL}${entry.logo}`}
+                        alt={`${entry.company} logo`}
+                        className="h-6 w-auto object-contain"
+                        style={{ filter: "brightness(0) invert(1)" }}
+                      />
+                    </div>
                     <Card.Title className="text-xl font-black uppercase">
                       {entry.title}
                     </Card.Title>
@@ -30,14 +38,13 @@ export function ExperienceSection() {
                 </div>
               </Card.Header>
               <Card.Content>
-                <ul className="mb-4 list-none space-y-1.5">
-                  {entry.bullets.map((b, i) => (
-                    <li key={i} className="flex gap-2 text-sm">
-                      <span className="mt-1 flex-none font-black">▸</span>
-                      <span>{b}</span>
-                    </li>
+                <div className="mb-4 space-y-2">
+                  {entry.description.map((para, i) => (
+                    <p key={i} className="text-sm leading-relaxed">
+                      {para}
+                    </p>
                   ))}
-                </ul>
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {entry.tags.map((tag) => (
                     <Badge key={tag} variant="solid" size="sm">
