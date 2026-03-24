@@ -2,6 +2,12 @@ import { Card } from "@/components/retroui/Card";
 import { Badge } from "@/components/retroui/Badge";
 import { experience } from "@/data/cv";
 
+function renderBold(text: string) {
+  return text.split(/\*\*(.+?)\*\*/g).map((part, i) =>
+    i % 2 === 1 ? <strong key={i}>{part}</strong> : part
+  );
+}
+
 export function ExperienceSection() {
   return (
     <section className="border-b-2 border-black px-6 py-12 md:px-16">
@@ -40,7 +46,7 @@ export function ExperienceSection() {
                 <div className="mb-4 space-y-2">
                   {entry.description.map((para, i) => (
                     <p key={i} className="text-sm leading-relaxed">
-                      {para}
+                      {renderBold(para)}
                     </p>
                   ))}
                 </div>

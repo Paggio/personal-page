@@ -38,8 +38,8 @@ export const experience: ExperienceEntry[] = [
     period: "02/2022 – 01/2026",
     location: "London, UK / Milano, IT",
     description: [
-      "I developed and managed data pipelines aggregating information from microservices databases, queues, third-party APIs and Elasticsearch, organizing it in S3 (Parquet/Iceberg format). Data is processed using Spark on EMR and queried via Athena, orchestrated through Airflow DAGs or Kubernetes microservices.",
-      "As a Senior Data Engineer (promoted in February 2023), I designed and implemented a new data platform from the ground up, automating Aurora cluster snapshots and their load into Redshift through ECS tasks, Glue, and Step Functions, with data models managed via DBT. All infrastructure provisioned using Terraform.",
+      "I developed and managed data pipelines aggregating information from microservices databases, queues, third-party APIs and Elasticsearch, organizing it in S3 (Parquet/Iceberg format). Data is processed using **Spark** on **EMR** and queried via Athena, orchestrated through **Airflow** DAGs or **Kubernetes** microservices.",
+      "As a Senior Data Engineer (promoted in February 2023), I designed and implemented a new data platform from the ground up, automating Aurora cluster snapshots and their load into **Redshift** through **ECS** tasks, **Glue**, and Step Functions, with data models managed via **DBT**. All infrastructure provisioned using **Terraform**.",
     ],
     tags: ["Spark", "EMR", "Airflow", "Iceberg", "Redshift", "DBT", "Terraform", "Athena", "Kubernetes"],
   },
@@ -50,7 +50,7 @@ export const experience: ExperienceEntry[] = [
     period: "05/2020 – 02/2022",
     location: "Milano, IT",
     description: [
-      "I contributed to the development and maintenance of Illimity's data streams within an Azure-based IT architecture. The data streams were built using Databricks, Data Factory, Delta Lake, and MongoDB, with all workflows managed through Azure DevOps.",
+      "I contributed to the development and maintenance of Illimity's data streams within an Azure-based IT architecture. The data streams were built using **Databricks**, **Data Factory**, **Delta Lake**, and **MongoDB**, with all workflows managed through Azure DevOps.",
     ],
     tags: ["Databricks", "Azure Data Factory", "Delta Lake", "MongoDB", "Azure DevOps"],
   },
