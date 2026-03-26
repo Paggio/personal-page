@@ -29,3 +29,4 @@ dist-ssr
 # Claude / local tooling
 .claude/
 .playwright-mcp/
+locals/

@@ -21,21 +21,10 @@ export interface ExperienceEntry {
 
 export const experience: ExperienceEntry[] = [
   {
-    title: "Senior Data Engineer",
-    company: "Cardo AI",
-    logo: "logos/cardo_ai.png",
-    period: "02/2026 – Present",
-    location: "Milano, IT",
-    description: [
-      "I implement and optimize Spark jobs scheduled via Airflow on a Kubernetes-based Spark cluster, maintain and configure the cluster, and manage the Trino deployment used to query results. I work across the entire data platform, from hands-on ETL to underlying infrastructure.",
-    ],
-    tags: ["Spark", "Airflow", "Kubernetes", "Trino"],
-  },
-  {
-    title: "Data Engineer → Senior Data Engineer",
+    title: "Senior Data Engineer ← Data Engineer",
     company: "TrueLayer",
     logo: "logos/truelayer_logo.png",
-    period: "02/2022 – 01/2026",
+    period: "02/2022 – 02/2026",
     location: "London, UK / Milano, IT",
     description: [
       "I developed and managed data pipelines aggregating information from microservices databases, queues, third-party APIs and Elasticsearch, organizing it in S3 (Parquet/Iceberg format). Data is processed using **Spark** on **EMR** and queried via Athena, orchestrated through **Airflow** DAGs or **Kubernetes** microservices.",
