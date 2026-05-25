@@ -11,7 +11,7 @@ function App() {
       <ExperienceSection />
 
       {/* Skills + Education side by side */}
-      <section className="border-b-2 border-black px-6 py-12 md:px-16">
+      <section className="border-b-2 px-6 py-12 md:px-16">
         <div className="mx-auto grid max-w-4xl gap-10 md:grid-cols-2">
           <SkillsSection />
           <EducationSection />
@@ -20,7 +20,7 @@ function App() {
 
       <PublicationsSection />
 
-      <footer className="border-t-2 border-black bg-primary px-6 py-4 text-center font-mono text-sm text-primary-foreground">
+      <footer className="border-t-2 bg-primary px-6 py-4 text-center font-mono text-sm text-primary-foreground">
         pagetti.mattia@gmail.com
       </footer>
     </div>

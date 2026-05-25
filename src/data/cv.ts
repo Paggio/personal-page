@@ -4,6 +4,7 @@ export const cvMeta = {
   email: "pagetti.mattia@gmail.com",
   phone: "+39 331 710 9356",
   linkedin: "mattia-pagetti-40891019b",
+  github: "Paggio",
   location: "Milano, IT",
   birthplace: "Sondrio (SO), Italy",
   dob: "21/02/1994",
@@ -21,10 +22,21 @@ export interface ExperienceEntry {
 
 export const experience: ExperienceEntry[] = [
   {
+    title: "Senior Data Engineer",
+    company: "Nearform",
+    logo: "logos/nearform_logo.png",
+    period: "02/2026 – Present",
+    location: "Tramore, IE / Milano, IT",
+    description: [
+      "I am assisting clients in building modern, scalable **Databricks** platforms with solid CI/CD foundations — ready for AI integration from day one, and accelerated by AI-native developer tools to ship faster. **DBT** and Databricks apps are part of the stack.",
+    ],
+    tags: ["Databricks", "DBT", "CI/CD", "LangGraph", "Python"],
+  },
+  {
     title: "Senior Data Engineer ← Data Engineer",
     company: "TrueLayer",
     logo: "logos/truelayer_logo.png",
-    period: "02/2022 – 02/2026",
+    period: "02/2022 – 01/2026",
     location: "London, UK / Milano, IT",
     description: [
       "I developed and managed data pipelines aggregating information from microservices databases, queues, third-party APIs and Elasticsearch, organizing it in S3 (Parquet/Iceberg format). Data is processed using **Spark** on **EMR** and queried via Athena, orchestrated through **Airflow** DAGs or **Kubernetes** microservices.",
@@ -64,7 +76,7 @@ export interface SkillGroup {
 export const skills: SkillGroup[] = [
   {
     category: "Main Stack",
-    items: ["Spark", "Airflow", "Iceberg", "DBT", "Databricks", "Terraform", "LangChain", "LangGraph"],
+    items: ["Spark", "Airflow", "Iceberg", "DBT", "Databricks", "Terraform", "LangGraph", "SDD"],
   },
   {
     category: "AWS",

@@ -30,3 +30,8 @@ dist-ssr
 .claude/
 .playwright-mcp/
 locals/
+
+# Personal
+notes.md
+latest_cv/
+/nearform_logo.png

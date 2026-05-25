@@ -4,13 +4,13 @@ import { skills } from "@/data/cv";
 export function SkillsSection() {
   return (
     <div>
-      <h2 className="mb-6 border-b-2 border-black pb-3 text-3xl font-black uppercase tracking-tight">
+      <h2 className="mb-6 border-b-2 pb-3 text-3xl font-black uppercase tracking-tight">
         Skills
       </h2>
       <div className="flex flex-col gap-5">
         {skills.map((group) => (
           <div key={group.category}>
-            <p className="mb-2 font-mono text-xs font-bold uppercase tracking-widest text-black/50">
+            <p className="mb-2 font-mono text-xs font-bold uppercase tracking-widest text-foreground/50">
               {group.category}
             </p>
             <div className="flex flex-wrap gap-2">
@@ -19,7 +19,7 @@ export function SkillsSection() {
                   key={item}
                   variant="outline"
                   size="sm"
-                  className="border-2 border-black font-mono"
+                  className="border-2 font-mono"
                 >
                   {item}
                 </Badge>
