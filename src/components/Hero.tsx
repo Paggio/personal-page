@@ -1,10 +1,10 @@
-import { Download, Mail, MapPin, Linkedin } from "lucide-react";
+import { Download, Mail, MapPin, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/retroui/Button";
 import { cvMeta } from "@/data/cv";
 
 export function Hero() {
   return (
-    <section className="border-b-2 border-black bg-accent px-6 py-12 md:px-16">
+    <section className="border-b-2 bg-accent px-6 py-12 md:px-16">
       <div className="mx-auto max-w-4xl">
         {/* Name & tagline */}
         <div className="mb-8">
@@ -38,10 +38,19 @@ export function Hero() {
             <MapPin size={15} />
             {cvMeta.location}
           </span>
+          <a
+            href={`https://github.com/${cvMeta.github}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 font-mono text-sm font-semibold hover:underline"
+          >
+            <Github size={15} />
+            {cvMeta.github}
+          </a>
         </div>
 
         {/* Download button */}
-        <a href={`${import.meta.env.BASE_URL}CV_2026_private.pdf`} download>
+        <a href={`${import.meta.env.BASE_URL}CV_2026.pdf`} download>
           <Button size="lg" className="gap-2 uppercase tracking-wider">
             <Download size={18} />
             Download CV

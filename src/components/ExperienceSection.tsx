@@ -10,9 +10,9 @@ function renderBold(text: string) {
 
 export function ExperienceSection() {
   return (
-    <section className="border-b-2 border-black px-6 py-12 md:px-16">
+    <section className="border-b-2 px-6 py-12 md:px-16">
       <div className="mx-auto max-w-4xl">
-        <h2 className="mb-8 border-b-2 border-black pb-3 text-3xl font-black uppercase tracking-tight">
+        <h2 className="mb-8 border-b-2 pb-3 text-3xl font-black uppercase tracking-tight">
           Experience
         </h2>
         <div className="flex flex-col gap-6">
@@ -21,7 +21,7 @@ export function ExperienceSection() {
               key={`${entry.company}-${entry.period}`}
               className="w-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
             >
-              <Card.Header className="border-b-2 border-black bg-primary text-primary-foreground">
+              <Card.Header className="border-b-2 bg-primary text-primary-foreground">
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
                   <div>
                     <div className="mb-1">
