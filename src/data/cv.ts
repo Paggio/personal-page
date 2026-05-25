@@ -25,7 +25,7 @@ export const experience: ExperienceEntry[] = [
     title: "Senior Data Engineer",
     company: "Nearform",
     logo: "logos/nearform_logo.png",
-    period: "02/2026 – Present",
+    period: "03/2026 – Present",
     location: "Tramore, IE / Milano, IT",
     description: [
       "I am assisting clients in building modern, scalable **Databricks** platforms with solid CI/CD foundations — ready for AI integration from day one, and accelerated by AI-native developer tools to ship faster. **DBT** and Databricks apps are part of the stack.",
